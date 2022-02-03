@@ -5,14 +5,17 @@
 * Return: Always 0 (Success)
 */
 int main(void)
-{	
-	char a;
-	int b;
-	long long int d;
+{
+	char c;
+	int i;
+	long int li;
+	long long int lli;
 	float f;
-	printf("Size of int: %zu byte(s)\n", sizeof(b));
-	printf("Size of float: %zu byte(s)\n", sizeof(f));
-	printf("Size of long long int: %zu byte(s)\n", sizeof(d));
-	printf("Size of char: %zu byte(s)\n", sizeof(a));
+
+	printf("Size of a char: %d byte(s)\n", sizeof(c));
+	printf("Size of an int: %d byte(s)\n", sizeof(i));
+	printf("Size of a long int: %d byte(s)\n", sizeof(li));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
+	printf("Size of float: %d byte(s)\n", sizeof(f));
 	return (0);
 }
