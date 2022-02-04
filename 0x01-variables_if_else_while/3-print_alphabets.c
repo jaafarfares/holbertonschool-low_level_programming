@@ -1,4 +1,3 @@
-File Edit Options Buffers Tools C Help
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -9,7 +8,7 @@ File Edit Options Buffers Tools C Help
 int main(void)
 {
 	char n, m;
-
+	
 	for (n = 'a'; n <= 'z'; n++)
 	{
 	putchar(n);
