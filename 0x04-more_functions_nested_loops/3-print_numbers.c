@@ -1,15 +1,13 @@
 #include "main.h"
-
 /**
-* print_numbers - check the code
-*
+* print_numbers - Prints the numers.
 * Return: Always 0.
 */
 void print_numbers(void)
 {
-	int n;
+	int x;
 
-	for (n = '0' n < '10')
-		_putchar('\n');
+	for (x = 0; x <= 9; x++)
+	_putchar((x % 10) + '0');
+	_putchar('\n');
 }
-
