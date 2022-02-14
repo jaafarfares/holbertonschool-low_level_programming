@@ -3,8 +3,8 @@
 
 /**
 * swap_int - check the code
-*@*a: input
-*@*b: input
+* @a: input
+* @b: input
 * Return: Always 0.
 *
 */
