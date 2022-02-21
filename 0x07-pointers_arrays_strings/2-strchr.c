@@ -8,17 +8,19 @@
 */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int a = 0, i;
 
-	for (i = 0; s[i] != c; i++)
+	while (s[a])
 	{
+		a++;
 	}
+	for (i = 0; i <= a; i++)
+	{
 		if (s[i] == c)
 		{
-			return (s + i);
+			s += i;
+			return (s);
 		}
-	else
-	{
-		return (0);
 	}
+		return ('\0');
 }
