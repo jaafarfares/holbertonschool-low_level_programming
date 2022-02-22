@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _strspn - check the code
  *@s: char
  *@accept: char
  * Return: Always 0.
