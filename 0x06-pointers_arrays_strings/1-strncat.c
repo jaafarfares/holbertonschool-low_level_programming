@@ -1,21 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strncat - check the code
- *@dest: pointer
- *@src: pointer
- *@n: integer
- * Return: Always 0.
- */
+* _strncat - concatenates two strings
+* @dest: destination
+* @src: source
+* @n: number of arrays
+* Return: (pointer to dest)
+*/
 char *_strncat(char *dest, char *src, int n)
 {
-	int a = strlen(dest);
+	int dest_len;
 	int i;
 
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
-		dest[a + i] = src[i];
-	dest[a + i] = '\0';
+	for (dest_len = 0; dest[dest_len] != '\0'; dest_len++)
+		;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[dest_len + i] = src[i];
+	dest[dest_len + i] = '\0';
 
 	return (dest);
 }
