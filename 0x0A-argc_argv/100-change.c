@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -11,25 +12,27 @@
 */
 int main(int argc, char *argv[])
 {
-	int a, n, i = 0;
+	int a, n, i, r;
+	int c[] = {25, 10, 5, 2, 1,};
 
-	for (a = 1; a < argc; a++)
+	r = 0;
+	if (argc != 2)
 	{
-		for (n = 0; argv[a][n]; n++)
-		{
-			if (isdigit(argv[a][n]) == 0)
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
+		printf("Error\n");
+		return (1);
 	}
-	for (a = 1; a < argc; a++)
+	i = atoi(argv[1]);
+	if (i < 1)
+		printf("0\n");
+	else
 	{
+		for (a = 0; a < 5 && i; i++)
 		{
-		i += atoi(argv[a]);
+			n = i / c[a];
+			r += n;
+			i = n * c[a];
 		}
+		printf("%d\n", r);
 	}
-	printf("%d\n", i);
 	return (0);
 }
