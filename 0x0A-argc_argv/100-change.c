@@ -11,10 +11,9 @@
 */
 int main(int argc, char *argv[])
 {
-	int a, n, i, r;
+	int a, n, i, r = 0;
 	int c[] = {25, 10, 5, 2, 1,};
 
-	r = 0;
 	if (argc != 2)
 	{
 		printf("Error\n");
