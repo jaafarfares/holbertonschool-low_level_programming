@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <math.h>
 
 /**
 * main - argv and argc programme
@@ -30,7 +29,7 @@ int main(int argc, char *argv[])
 		{
 			n = i / c[a];
 			r += n;
-			i = n * c[a];
+			i -= n * c[a];
 		}
 		printf("%d\n", r);
 	}
