@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		for (a = 0; a < 5 && i; i++)
+		for (a = 0; a < 5 && i; a++)
 		{
 			n = i / c[a];
 			r += n;
