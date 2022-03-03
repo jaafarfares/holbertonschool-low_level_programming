@@ -4,9 +4,9 @@
 
 /**
  * *string_nconcat - check the code
- *@*s1: first string
- *@s2: second string
- *@n: the numbers from s2
+ * @s1: first string
+ * @s2: second string
+ * @n: the numbers from s2
  * Return: ptr.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
