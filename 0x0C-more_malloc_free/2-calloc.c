@@ -5,14 +5,15 @@
 
 /**
 * *_calloc - prints buffer in hexa
-* @nmemb: the address of memory to print
+* @nmemb: the number of memory to print
 * @size: the size of the memory to print
 *
 * Return: Nothing.
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int a, *p;
+	unsigned int a;
+	char *p;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -20,8 +21,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	p = malloc(nmemb * size);
 	if (p == NULL)
+	{
 		return (NULL);
-	for (a = 0; a < *p; a++)
+	}
+	for (a = 0; a < nmemb * size; a++)
 	{
 		p[a] = 0;
 	}
