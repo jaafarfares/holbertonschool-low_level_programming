@@ -4,7 +4,6 @@
 
 /**
  * init_dog - fonction
- *@dog: dog
  *@d: the dog
  *@name: the dog name
  *@age: the dog age
