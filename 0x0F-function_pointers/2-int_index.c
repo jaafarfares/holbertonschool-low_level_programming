@@ -1,21 +1,22 @@
 #include "function_pointers.h"
 /**
- *int_index - the function that serches for integers
+ * int_index - function that serches for integers
+ *@array: ..
  *@size: ..
  *@cmp: ...
- *Return : ...
- * */
+ *Return : index of element
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int a;
 
-	if (array == NULL || cmp == NULL)
+	if (!array || !cmp || size <= 0)
 	{
 		return (-1);
 	}
 	for (a = 0; a < size; a++)
 	{
-		if (cmp(array[a]) != 0)
+		if ((*cmp)(array[a]))
 			return (a);
 	}
 	return (-1);
