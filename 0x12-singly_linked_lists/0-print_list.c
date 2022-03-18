@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_list
+ * print_list - the function
  * @h: pointer
- * @list_t : the list
- * Return ...
+ * Return: ...
  */
 size_t print_list(const list_t *h)
 {
 	const list_t *ptr = NULL;
-	size_t list_count = 0; 
+	size_t list_count = 0;
 
 	if (h != NULL)
 	{
@@ -24,6 +23,7 @@ size_t print_list(const list_t *h)
 		else
 		printf("[%d] %s\n", ptr->len, ptr->str);
 		ptr = ptr->next;
+		list_count++;
 	}
-		return(list_count);
+		return (list_count);
 }
