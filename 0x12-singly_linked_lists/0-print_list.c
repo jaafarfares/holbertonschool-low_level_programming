@@ -2,13 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_list - the function
+ * print_list - the function prints all elments of a list
  * @h: pointer
  * Return: ...
  */
 size_t print_list(const list_t *h)
-{
-	const list_t *ptr = NULL;
+{const list_t *ptr = NULL;
 	size_t list_count = 0;
 
 	if (h != NULL)
