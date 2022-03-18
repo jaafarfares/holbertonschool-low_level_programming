@@ -7,21 +7,18 @@
  * Return: ...
  */
 size_t print_list(const list_t *h)
-{const list_t *ptr = NULL;
+{
+	const list_t *ptr = h;
 	size_t list_count = 0;
 
-	if (h != NULL)
+	while (ptr)
 	{
-		ptr = h;
-	}
-	while (ptr != NULL)
-	{
-		list_count++;
-		if (h->str == NULL)
-		printf("[0] (nil)\n");
+		if (!ptr->str)
+			printf("[%i] %s\n", 0, "(nil)");
 		else
-		printf("[%d] %s\n", ptr->len, ptr->str);
+			printf("[%i] %s\n", ptr->len, ptr->str);
 		ptr = ptr->next;
+		list_count++;
 	}
 		return (list_count);
 }
