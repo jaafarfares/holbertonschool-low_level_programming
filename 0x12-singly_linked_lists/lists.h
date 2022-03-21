@@ -19,8 +19,8 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
-void myStartupFun (void) __attribute__ ((constructor));
-int main(void);
+void print_Fun (void) __attribute__ ((constructor));
+void print_Fun(void);
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
