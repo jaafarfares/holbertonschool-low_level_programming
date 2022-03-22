@@ -4,6 +4,7 @@
 /**
  * print_listint - the function prints all elments of a list
  * @h: pointer
+ *
  * Return: ...
  */
 size_t print_listint(const listint_t *h)
@@ -13,7 +14,7 @@ size_t print_listint(const listint_t *h)
 
 	while (ptr)
 	{
-		printf("%d\n", ptr->n);
+		printf("%i\n", ptr->n);
 		ptr = ptr->next;
 		list_count++;
 	}
