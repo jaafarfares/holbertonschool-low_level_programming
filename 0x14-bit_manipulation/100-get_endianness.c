@@ -4,8 +4,13 @@
 int get_endianness(void)
 {
 	int x = 1;
-
-	char *y = (char*)&x;
+	char *y;
+	
+	if (x != 0)
+	{
+		printf("Little Endian\n");
+	}
+	y = (char*)&x;
 	printf("%c\n",*y+48);
 	return (0);
 }
