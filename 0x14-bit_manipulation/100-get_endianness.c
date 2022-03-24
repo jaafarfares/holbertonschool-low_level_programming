@@ -3,15 +3,13 @@
 
 int get_endianness(void)
 {
-	int x = 1;
+	int a = 1;
+	char *b;
 
-	if (x != 0)
-	{
+	b = (char *)&a;
+	if (*b)
 		printf("Little Endian\n");
-	}
 	else
-	{
 		printf("Big Endian\n");
-	}
-	return (0);
+	return(0);
 }
