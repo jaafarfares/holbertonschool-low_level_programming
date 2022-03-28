@@ -8,17 +8,19 @@
  */
 int main(void)
 {
-	int n;
-	
-	for (n = 0; n < 90; n++)
+	int n, a;
+
+	for (n = 0; n < 9; n++)
 	{
-		printf("%i", n);
-		if (n <= 89)
+		for (a = 1; a <= 9; a++)
+		{
+		putchar((n % 10) + '0');
+		putchar(a + '0');
 		{
 			putchar(',');
 			putchar(' ');
 		}
+		}
 	}
-	putchar('\n');
 	return (0);
 }
