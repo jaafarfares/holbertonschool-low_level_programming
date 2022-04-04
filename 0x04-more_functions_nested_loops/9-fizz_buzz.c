@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - ...
  *
@@ -28,9 +29,7 @@ int main(void)
 		printf("%d", a);
 		}
 		if (a != 100)
-		{
-			printf(" ");
-		}
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
