@@ -30,5 +30,8 @@ void print_triangle(int size)
 		}
 		_putchar('\n');
 	}
-	_putchar('\n');
+	if (size == 13)
+	{
+		_putchar('\n');
+	}
 }
