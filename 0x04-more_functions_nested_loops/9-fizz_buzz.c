@@ -19,7 +19,7 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
-		else if ((a % 15) == 0)
+		else if ((a % 5 == 0) && (a % 3 == 0))
 		{
 			printf("FizzBuzz ");
 		}
@@ -28,5 +28,6 @@ int main(void)
 		printf("%d ", a);
 		}
 	}
-		return (0);
+	printf("\n");	
+	return (0);
 }
