@@ -1,8 +1,8 @@
 #include "main.h"
 #include<stdio.h>
 /**
-* print_diagonal - a function print a degional line.
-* @n: input .
+* print_diagonal - a function print a degional line
+* @n: is the number of lines should be printed
 * Return: Always 0.
 */
 void print_diagonal(int n)
