@@ -1,2 +1,4 @@
-all:
-	${cc}  $(wildcard *.c) -o school
+CC = gcc
+SRCS = $(wildcard *.c)
+all: $(SRCS)
+	${cc} $(SRCS) -o school
